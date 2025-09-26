@@ -1,0 +1,4 @@
+{
+  "google": { "clientId": "", "clientSecret": "", "enabled": false },
+  "github": { "clientId": "", "clientSecret": "", "enabled": false }
+}

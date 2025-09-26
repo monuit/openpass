@@ -1,0 +1,21 @@
+node_modules
+dist
+build
+.env
+.env.local
+.DS_Store
+/*.log
+coverage
+.vscode
+.idea
+**/node_modules
+**/dist
+ .tmp
+ /.tmp
+ *.log
+ yarn-error.log
+ pnpm-lock.yaml
+ coverage
+ .cache
+ /.vscode
+mcp.json

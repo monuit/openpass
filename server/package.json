@@ -1,0 +1,26 @@
+{
+  "name": "openpass-server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "migrations:list": "ls -1 migrations || true",
+    "migrate:validate": "node -e \"const fs=require('fs'); const p='migrations/0001_init.sql'; if(!fs.existsSync(p)){console.error('missing migration',p); process.exit(2);} console.log('migrations ok');\""
+  },
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "fastify-cookie": "^5.7.0",
+    "zod": "^3.0.0",
+    "openid-client": "^5.0.0",
+    "jose": "^4.0.0",
+    "drizzle-orm": "^0.27.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  }
+}

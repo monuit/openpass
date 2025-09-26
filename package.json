@@ -1,0 +1,21 @@
+{
+  "name": "openpass-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "server",
+    "sdk",
+    "examples/*"
+  ],
+  "scripts": {
+    "install:all": "yarn install",
+    "dev:server": "yarn workspace openpass-server dev",
+    "dev:sdk": "yarn workspace @openpass/sdk dev",
+    "dev:example": "yarn workspace openpass-example-vite dev",
+    "dev:all": "concurrently \"yarn dev:server\" \"yarn dev:example\"",
+    "build": "yarn workspaces run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

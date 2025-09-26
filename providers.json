@@ -1,0 +1,6 @@
+{
+  "google": { "clientId": "", "clientSecret": "", "enabled": false },
+  "github": { "clientId": "", "clientSecret": "", "enabled": false },
+  "microsoft": { "clientId": "", "clientSecret": "", "enabled": false },
+  "apple": { "clientId": "", "teamId":"", "keyId":"", "privateKey":""}
+}
